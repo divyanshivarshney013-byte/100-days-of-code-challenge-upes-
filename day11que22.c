@@ -25,10 +25,10 @@ int main(){
     printf("enter cost price and selling price: ");
     scanf("%f %f", &cp, &sp);
     if(sp > cp){
-        percentage=((sp-cp)/cp*100);
+        percentage=((sp-cp)/cp)*100;
         printf("profit %.0f", percentage);
     }else if(cp > sp){
-        percentage=((cp-sp)/cp-100);
+        percentage=((cp-sp)/cp)*100;
         printf("loss %.0f", percentage);
     }
     else{
